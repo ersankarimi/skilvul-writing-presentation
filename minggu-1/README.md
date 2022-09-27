@@ -5,6 +5,8 @@
 1. [UNIX Command Line](#unix-command-line)
 2. [Git dan Github Dasar](#git-dan-github-dasar)
 3. [HTML](#html)
+4. [CSS](#css)
+5. [JavaScript](#javscript)
 
 <br>
 
