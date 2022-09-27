@@ -361,6 +361,8 @@ Untuk deploy HTML, kita bisa menggunakan beberapa cara, yaitu:
 
 Dan masih banyak lagi cara deploy HTML lainnya.
 
+<br>
+
 ## CSS
 
 CSS adalah singkatan dari Cascading Style Sheets. CSS adalah sebuah bahasa yang
@@ -453,6 +455,8 @@ HTML yang digunakan untuk menentukan sebuah elemen HTML menjadi responsive.
 	align-content: center;
 }
 ```
+
+<br>
 
 ## Javscript
 
