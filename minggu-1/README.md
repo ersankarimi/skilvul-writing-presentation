@@ -4,6 +4,7 @@
 
 1. [UNIX Command Line](#unix-command-line)
 2. [Git dan Github Dasar](#git-dan-github-dasar)
+3. [HTML](#html)
 
 <br>
 
@@ -137,3 +138,223 @@ Berikut adalah langkah-langkah untuk menggunakan Git dan Github:
    bisa push repository yang sudah ada di komputer kamu ke Github dengan
    mengintergrasikannya dengan repository yang sudah kita buat di Github
    menggunakan `git remote`.
+
+## HTML
+
+### HTML
+
+HTML adalah singkatan dari HyperText Markup Language. HTML adalah bahasa yang
+digunakan untuk membuat halaman web. HTML merupakan bahasa markup, artinya HTML
+tidak memiliki fitur pemrograman seperti variabel, fungsi, dan lain sebagainya.
+HTML hanya digunakan untuk menandai elemen-elemen yang ada di dalam halaman web.
+HTML terdiri dari tag-tag yang digunakan untuk menandai elemen-elemen tersebut.
+
+## Tag HTML
+
+Tag HTML adalah sebuah elemen yang digunakan untuk menandai elemen-elemen yang
+ada di dalam halaman web. Tag HTML terdiri dari tag pembuka dan tag penutup. Tag
+pembuka digunakan untuk menandai awal dari sebuah elemen, sedangkan tag penutup
+digunakan untuk menandai akhir dari sebuah elemen.
+
+Ada 2 jenis tag HTML yaitu, tag yang bersifat self-closing dan tag yang tidak
+bersifat self-closing. Tag yang bersifat self-closing adalah tag yang tidak
+memiliki tag penutup. Tag yang tidak bersifat self-closing adalah tag yang
+memiliki tag penutup.
+
+Cara membuat tag html adalah sebagai berikut `<tagname> isi tag </tagname>`
+
+### Attribute HTML
+
+Atribut HTML adalah sebuah informasi tambahan yang diberikan pada sebuah tag
+HTML. Atribut HTML diletakkan di dalam tag pembuka. Atribut HTML terdiri dari
+nama atribut dan nilai atribut. Nama atribut digunakan untuk menandai informasi
+apa yang akan diberikan, sedangkan nilai atribut digunakan untuk menandai nilai
+dari informasi tersebut. Cara membuat atribut HTML adalah sebagai berikut
+`<tagname atribut="nilai atribut"> isi tag </tagname>`.
+
+Contoh atribut HTML adalah sebagai berikut:
+
+-   `id` digunakan untuk menandai id dari sebuah elemen.
+-   `class` digunakan untuk menandai kelas dari sebuah elemen.
+-   `src` digunakan untuk menandai sumber dari sebuah elemen.
+-   `href` digunakan untuk menandai link dari sebuah elemen.
+-   `alt` digunakan untuk menandai alternatif dari sebuah elemen. Dan masih
+    banyak lagi yang lainnya
+
+### Basic Tag HTML
+
+Ada basic tag HTML yang harus kamu ketahui, yaitu:
+
+-   `<!DOCTYPE html>` mendefinisikan bahwa dokumen ini adalah dokumen HTML5
+-   `<html></html>` digunakan untuk menandai awal dari sebuah halaman web.
+-   `<head></head>` digunakan untuk menandai bagian dari halaman web yang tidak
+    akan ditampilkan di browser.
+-   `<title></title>` digunakan untuk menandai judul dari halaman web.
+-   `<body></body>` digunakan untuk menandai bagian dari halaman web yang akan
+    ditampilkan di browser.
+
+Struktur dasar dari sebuah halaman web adalah sebagai berikut:
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Judul halaman</title>
+	</head>
+	<body>
+		isi halaman
+	</body>
+</html>
+```
+
+### Contoh Tag HTML
+
+#### Heading
+
+Heading adalah sebuah tag yang digunakan untuk menandai judul dari sebuah
+halaman web. Heading terdiri dari 6 jenis yaitu, h1, h2, h3, h4, h5, dan h6.
+Heading memiliki tingkat kepentingan yang berbeda-beda. Heading dengan tingkat
+kepentingan yang lebih tinggi akan memiliki ukuran font yang lebih besar
+daripada heading dengan tingkat kepentingan yang lebih rendah.
+
+```html
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+```
+
+#### Paragraph
+
+Paragraph adalah sebuah tag yang digunakan untuk menandai sebuah paragraf.
+Paragraph memiliki tingkat kepentingan yang sama dengan heading.
+
+```html
+<p>Paragraph</p>
+```
+
+#### Link
+
+Link adalah sebuah tag yang digunakan untuk menandai sebuah link. Link memiliki
+tingkat kepentingan yang sama dengan heading.
+
+```html
+<a href="https://google.com">Google</a>
+```
+
+#### Image
+
+Image adalah sebuah tag yang digunakan untuk menandai sebuah gambar. Image
+memiliki tingkat kepentingan yang sama dengan heading.
+
+```html
+<img
+	src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+	alt="Google Logo"
+/>
+```
+
+#### List
+
+List adalah sebuah tag yang digunakan untuk menandai sebuah list. List memiliki
+tingkat kepentingan yang sama dengan heading. List terdiri dari 2 jenis yaitu,
+ordered list dan unordered list. Ordered list adalah list yang berurutan,
+sedangkan unordered list adalah list yang tidak berurutan.
+
+```html
+<!-- Ordered List -->
+<ol>
+	<li>Item 1</li>
+	<li>Item 2</li>
+	<li>Item 3</li>
+</ol>
+
+<!-- Unordered List -->
+<ul>
+	<li>Item 1</li>
+	<li>Item 2</li>
+	<li>Item 3</li>
+</ul>
+```
+
+#### Table
+
+Table adalah sebuah tag yang digunakan untuk menandai sebuah tabel. Table
+memiliki tingkat kepentingan yang sama dengan heading. Table terdiri dari 2
+jenis yaitu, table header dan table data. Table header adalah bagian dari tabel
+yang berisi judul dari tabel, sedangkan table data adalah bagian dari tabel yang
+berisi data dari tabel.
+
+```html
+<table>
+	<tr>
+		<th>Header 1</th>
+		<th>Header 2</th>
+		<th>Header 3</th>
+	</tr>
+	<tr>
+		<td>Data 1</td>
+		<td>Data 2</td>
+		<td>Data 3</td>
+	</tr>
+</table>
+```
+
+#### Form
+
+Form adalah sebuah tag yang digunakan untuk menandai sebuah form. Form memiliki
+tingkat kepentingan yang sama dengan heading. Form terdiri dari 2 jenis yaitu,
+input dan button. Input adalah sebuah elemen yang digunakan untuk menandai
+sebuah inputan, sedangkan button adalah sebuah elemen yang digunakan untuk
+menandai sebuah tombol.
+
+```html
+<form>
+	<input type="text" placeholder="Input" />
+	<button type="submit">Submit</button>
+</form>
+```
+
+#### Div dan Span
+
+Div mendefinisikan divisi atau bagian dalam dokumen HTML. Div tag digunakan
+sebagai wadah untuk elemen HTML - yang kemudian ditata dengan CSS atau
+dimanipulasi dengan JavaScript. Div tag is easily styled by using the class or
+id attribute.
+
+Span mendefinisikan sebuah bagian dalam dokumen HTML. Span tag digunakan untuk
+mengelompokkan elemen inline dan untuk memberikan gaya CSS (dengan menggunakan
+class atau id atribut) atau untuk manipulasi elemen dengan JavaScript.
+
+```html
+<div>Div</div>
+<span>Span</span>
+```
+
+#### Semantic HTML
+
+Semantic HTML adalah sebuah tag yang digunakan untuk menandai sebuah elemen
+HTML. Tag HTML yang digunakan untuk menandai sebuah elemen HTML disebut dengan
+tag HTML semantik. Tag HTML semantik memiliki tingkat kepentingan yang sama
+dengan heading. Tag HTML semantik terdiri dari 5 jenis yaitu, header, footer,
+main, section, dan article.
+
+```html
+<header>Header</header>
+<footer>Footer</footer>
+<main>Main</main>
+<section>Section</section>
+<article>Article</article>
+```
+
+### Deploy HTML
+
+Untuk deploy HTML, kita bisa menggunakan beberapa cara, yaitu:
+
+-   Deploy dengan menggunakan Github Pages
+-   Deploy dengan menggunakan Netlify
+-   Deploy dengan menggunakan Vercel
+
+Dan masih banyak lagi cara deploy HTML lainnya.
