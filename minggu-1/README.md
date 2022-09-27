@@ -149,7 +149,7 @@ tidak memiliki fitur pemrograman seperti variabel, fungsi, dan lain sebagainya.
 HTML hanya digunakan untuk menandai elemen-elemen yang ada di dalam halaman web.
 HTML terdiri dari tag-tag yang digunakan untuk menandai elemen-elemen tersebut.
 
-## Tag HTML
+### Tag HTML
 
 Tag HTML adalah sebuah elemen yang digunakan untuk menandai elemen-elemen yang
 ada di dalam halaman web. Tag HTML terdiri dari tag pembuka dan tag penutup. Tag
