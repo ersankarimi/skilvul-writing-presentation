@@ -358,3 +358,96 @@ Untuk deploy HTML, kita bisa menggunakan beberapa cara, yaitu:
 -   Deploy dengan menggunakan Vercel
 
 Dan masih banyak lagi cara deploy HTML lainnya.
+
+## CSS
+
+CSS adalah singkatan dari Cascading Style Sheets. CSS adalah sebuah bahasa yang
+digunakan untuk mengatur tampilan dari sebuah halaman web.
+
+### Peran CSS
+
+CSS memiliki peran yang sangat penting dalam pembuatan sebuah halaman web. CSS
+digunakan untuk mengatur tampilan dari sebuah halaman web. CSS memiliki 3 peran
+yaitu,
+
+-   Mengatur tampilan dari sebuah halaman web
+-   Mengatur posisi dari sebuah halaman web
+-   Mengatur animasi dari sebuah halaman web
+-   Mengatur posisi dari sebuah halaman web
+
+### Cara Menyisipkan CSS ke HTML
+
+CSS memiliki 3 jenis yaitu, inline CSS, internal CSS, dan external CSS. Inline
+CSS adalah CSS yang ditulis langsung di dalam tag HTML, internal CSS adalah CSS
+yang ditulis di dalam tag HTML, dan external CSS adalah CSS yang ditulis di
+dalam file terpisah.
+
+### Sintaks Dasar CSS
+
+CSS memiliki 3 jenis yaitu, selector, property, dan value. Selector adalah
+sebuah elemen HTML yang akan diberikan style, property adalah sebuah style yang
+akan diberikan ke sebuah elemen HTML, dan value adalah sebuah nilai dari sebuah
+style.
+
+```css
+selector {
+	property: value;
+}
+```
+
+### Responsive Web Design CSS
+
+Responsive Web Design adalah sebuah teknik yang digunakan untuk membuat sebuah
+website agar dapat menyesuaikan dengan ukuran layar yang berbeda. Responsive Web
+Design menggunakan 3 jenis yaitu, viewport, media query, dan flexbox.
+
+#### Viewport
+
+Viewport adalah sebuah elemen HTML yang digunakan untuk menentukan ukuran layar
+yang akan digunakan untuk menampilkan sebuah website. Viewport memiliki 2 jenis
+yaitu, viewport width dan viewport height. Viewport width adalah sebuah elemen
+HTML yang digunakan untuk menentukan lebar layar yang akan digunakan untuk
+menampilkan sebuah website, sedangkan viewport height adalah sebuah elemen HTML
+yang digunakan untuk menentukan tinggi layar yang akan digunakan untuk
+menampilkan sebuah website.
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+#### Media Query
+
+Media query adalah sebuah aturan CSS yang digunakan untuk menentukan ukuran
+layar yang akan digunakan untuk menampilkan sebuah website. Media query memiliki
+2 jenis yaitu, media query width dan media query height. Media query width
+adalah sebuah aturan CSS yang digunakan untuk menentukan lebar layar yang akan
+digunakan untuk menampilkan sebuah website, sedangkan media query height adalah
+sebuah aturan CSS yang digunakan untuk menentukan tinggi layar yang akan
+digunakan untuk menampilkan sebuah website.
+
+```css
+@media screen and (max-width: 600px) {
+	body {
+		background-color: red;
+	}
+}
+```
+
+#### Flexbox
+
+Flexbox adalah sebuah aturan CSS yang digunakan untuk membuat sebuah elemen HTML
+menjadi responsive. Flexbox memiliki 2 jenis yaitu, flex container dan flex
+item. Flex container adalah sebuah elemen HTML yang digunakan untuk menentukan
+sebuah elemen HTML menjadi responsive, sedangkan flex item adalah sebuah elemen
+HTML yang digunakan untuk menentukan sebuah elemen HTML menjadi responsive.
+
+```css
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+```
