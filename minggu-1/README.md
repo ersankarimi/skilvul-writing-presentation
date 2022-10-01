@@ -25,10 +25,10 @@ file dan menjalankannya.
 
 ### Contoh-Contoh Command Line Interface
 
--   bash
--   zsh
--   cmd
--   sh
+- bash
+- zsh
+- cmd
+- sh
 
 ### Contoh Perintah Command Line Interface
 
@@ -37,37 +37,36 @@ antara lain :
 
 #### Navigasi
 
--   `cd` : untuk berpindah direktori
--   `ls` : untuk melihat isi direktori
--   `pwd` : untuk melihat direktori yang sedang aktif
+- `cd` : untuk berpindah direktori
+- `ls` : untuk melihat isi direktori
+- `pwd` : untuk melihat direktori yang sedang aktif
 
 #### Manipulasi File
 
--   `touch` : untuk membuat file
--   `mkdir` : untuk membuat direktori
--   `rm` : untuk menghapus file
+- `touch` : untuk membuat file
+- `mkdir` : untuk membuat direktori
+- `rm` : untuk menghapus file
 
 #### Melihat isi file
 
--   `cat` : untuk melihat isi file
--   `tail` : untuk melihat beberapa line awal dari sebuah file text
--   `head` : untuk melihat beberapa line awal dari sebuah file text
--   `grep` : untuk mencari kata pada sebuah file
+- `cat` : untuk melihat isi file
+- `tail` : untuk melihat beberapa line awal dari sebuah file text
+- `head` : untuk melihat beberapa line awal dari sebuah file text
+- `grep` : untuk mencari kata pada sebuah file
 
 ## Tambahan
 
 #### Relative Path
 
--   Relative path adalah path yang berhubungan dengan direktori yang sedang
-    aktif.
+- Relative path adalah path yang berhubungan dengan direktori yang sedang aktif.
 
-    `/Users/user/Work/GitHub/skilvul/tugas`
+  `/Users/user/Work/GitHub/skilvul/tugas`
 
 #### Absolute Path
 
--   Absolute path adalah path yang berhubungan dengan root direktori.
+- Absolute path adalah path yang berhubungan dengan root direktori.
 
-    `./catatan`
+  `./catatan`
 
 ## Git dan Github Dasar
 
@@ -176,24 +175,24 @@ dari informasi tersebut. Cara membuat atribut HTML adalah sebagai berikut
 
 Contoh atribut HTML adalah sebagai berikut:
 
--   `id` digunakan untuk menandai id dari sebuah elemen.
--   `class` digunakan untuk menandai kelas dari sebuah elemen.
--   `src` digunakan untuk menandai sumber dari sebuah elemen.
--   `href` digunakan untuk menandai link dari sebuah elemen.
--   `alt` digunakan untuk menandai alternatif dari sebuah elemen. Dan masih
-    banyak lagi yang lainnya
+- `id` digunakan untuk menandai id dari sebuah elemen.
+- `class` digunakan untuk menandai kelas dari sebuah elemen.
+- `src` digunakan untuk menandai sumber dari sebuah elemen.
+- `href` digunakan untuk menandai link dari sebuah elemen.
+- `alt` digunakan untuk menandai alternatif dari sebuah elemen. Dan masih banyak
+  lagi yang lainnya
 
 ### Basic Tag HTML
 
 Ada basic tag HTML yang harus kamu ketahui, yaitu:
 
--   `<!DOCTYPE html>` mendefinisikan bahwa dokumen ini adalah dokumen HTML5
--   `<html></html>` digunakan untuk menandai awal dari sebuah halaman web.
--   `<head></head>` digunakan untuk menandai bagian dari halaman web yang tidak
-    akan ditampilkan di browser.
--   `<title></title>` digunakan untuk menandai judul dari halaman web.
--   `<body></body>` digunakan untuk menandai bagian dari halaman web yang akan
-    ditampilkan di browser.
+- `<!DOCTYPE html>` mendefinisikan bahwa dokumen ini adalah dokumen HTML5
+- `<html></html>` digunakan untuk menandai awal dari sebuah halaman web.
+- `<head></head>` digunakan untuk menandai bagian dari halaman web yang tidak
+  akan ditampilkan di browser.
+- `<title></title>` digunakan untuk menandai judul dari halaman web.
+- `<body></body>` digunakan untuk menandai bagian dari halaman web yang akan
+  ditampilkan di browser.
 
 Struktur dasar dari sebuah halaman web adalah sebagai berikut:
 
@@ -355,9 +354,9 @@ main, section, dan article.
 
 Untuk deploy HTML, kita bisa menggunakan beberapa cara, yaitu:
 
--   Deploy dengan menggunakan Github Pages
--   Deploy dengan menggunakan Netlify
--   Deploy dengan menggunakan Vercel
+- Deploy dengan menggunakan Github Pages
+- Deploy dengan menggunakan Netlify
+- Deploy dengan menggunakan Vercel
 
 Dan masih banyak lagi cara deploy HTML lainnya.
 
@@ -374,10 +373,10 @@ CSS memiliki peran yang sangat penting dalam pembuatan sebuah halaman web. CSS
 digunakan untuk mengatur tampilan dari sebuah halaman web. CSS memiliki 3 peran
 yaitu,
 
--   Mengatur tampilan dari sebuah halaman web
--   Mengatur posisi dari sebuah halaman web
--   Mengatur animasi dari sebuah halaman web
--   Mengatur posisi dari sebuah halaman web
+- Mengatur tampilan dari sebuah halaman web
+- Mengatur posisi dari sebuah halaman web
+- Mengatur animasi dari sebuah halaman web
+- Mengatur posisi dari sebuah halaman web
 
 ### Cara Menyisipkan CSS ke HTML
 
