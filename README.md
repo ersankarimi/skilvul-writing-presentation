@@ -13,3 +13,4 @@ Untuk mengakses materi-materi yang telah dibahas, silahkan klik link berikut:
     [https://youtu.be/1Z1Z7X7Y8_o](https://youtu.be/1Z1Z7X7Y8_o)
 - [Materi Minggu 2](/minggu-2/README.md)
 - [Materi Minggu 3](/minggu-3/README.md)
+- [Materi Minggu 4](/minggu-4/README.md)
