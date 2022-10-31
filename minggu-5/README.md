@@ -5,7 +5,9 @@
 1. [Node JS](#node-js)
 2. [Intro to React](#intro-to-react)
 3. [JSX](#jsx)
-4. [React Components](#react-components)
+4. [React Components](#react-component)
+5. [Prop Types](#prop-types)
+6. [Hooks](#hooks)
 
 <br>
 
@@ -407,3 +409,69 @@ Component sebelum React Component dihapus dari layar. Unmounting mempunyai 1
 fase, yaitu:
 
 1. Fase pertama: `componentWillUnmount()`
+
+## Prop Types
+
+Prop Types adalah sebuah library yang memungkinkan kita untuk menentukan tipe
+data dari Props. Prop Types memungkinkan kita untuk membuat React Component yang
+lebih aman.
+
+### Menggunakan Prop Types
+
+Untuk menggunakan Prop Types, kita bisa menggunakan fungsi `PropTypes`. Fungsi
+`PropTypes` membutuhkan dua parameter, yaitu nama Props dan tipe data dari
+Props. Berikut adalah contoh penggunaan fungsi `PropTypes`:
+
+```jsx
+import React from "react";
+import PropTypes from "prop-types";
+
+const App = (props) => {
+  return (
+    <div>
+      <h1>{props.title}</h1>
+    </div>
+  );
+};
+
+App.propTypes = {
+  title: PropTypes.string,
+};
+
+export default App;
+```
+
+## Hooks
+
+Hooks adalah sebuah fungsi yang memungkinkan kita untuk menggunakan State dan
+Lifecycle pada React Component. Hooks memungkinkan kita untuk membuat React
+Component yang lebih sederhana.
+
+### Menggunakan Hooks
+
+Untuk menggunakan Hooks, kita bisa menggunakan fungsi `useState()` dan fungsi
+`useEffect()`. Fungsi `useState()` membutuhkan satu parameter, yaitu nilai awal
+dari State. Fungsi `useEffect()` membutuhkan dua parameter, yaitu fungsi yang
+akan dijalankan dan array yang berisi nama Props. Berikut adalah contoh
+penggunaan fungsi `useState()` dan fungsi `useEffect()`:
+
+```jsx
+import React, { useState, useEffect } from "react";
+
+const App = () => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `Kamu telah mengklik sebanyak ${count} kali`;
+  }, [count]);
+
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count + 1)}>Tambah</button>
+    </div>
+  );
+};
+
+export default App;
+```
