@@ -17,3 +17,4 @@ Untuk mengakses materi-materi yang telah dibahas, silahkan klik link berikut:
 - Untuk materi Minggu 5 (tidak ada karena sendang dalam Group Project)
 - [Materi Minggu 6](/minggu-6/README.md)
 - [Materi Minggu 7](/minggu-7/README.md)
+- [Materi Minggu 8](/minggu-8/README.md)
