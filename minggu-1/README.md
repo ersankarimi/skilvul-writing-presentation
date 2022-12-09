@@ -2,13 +2,346 @@
 
 ## Daftar Isi
 
-1. [UNIX Command Line](#unix-command-line)
-2. [Git dan Github Dasar](#git-dan-github-dasar)
-3. [HTML](#html)
-4. [CSS](#css)
-5. [JavaScript](#javscript)
+1. [Algorithm and Data Structure](#algorithm-and-data-structure)
+2. [UNIX Command Line](#unix-command-line)
+3. [Git dan Github Dasar](#git-dan-github-dasar)
+4. [HTML](#html)
+5. [CSS](#css)
+6. [JavaScript](#javscript)
 
 <br>
+
+## Algorithm and Data Structure
+
+### Algorithm
+
+Algorithm atau Algoritma adalah sebuah langkah-langkah yang digunakan untuk
+menyelesaikan suatu masalah. Algoritma berfungsi untuk mengubah masalah yang
+kompleks menjadi masalah yang lebih sederhana sehingga lebih mudah untuk
+diselesaikan. Algoritma juga dapat digunakan untuk menyelesaikan masalah yang
+sama secara berulang-ulang.
+
+Contoh algoritma sederhana adalah algoritma untuk menyelesaikan masalah
+perhitungan sederhana seperti penjumlahan, pengurangan, perkalian, dan
+pembagian.
+
+```
+1. Mulai
+2. Masukkan angka pertama
+3. Masukkan angka kedua
+4. Tampilkan hasil penjumlahan dari kedua angka
+5. Selesai
+```
+
+### Pseudocode
+
+Pseudocode adalah sebuah cara untuk menulis algoritma dengan menggunakan bahasa
+yang lebih mudah dimengerti. Pseudocode dapat digunakan untuk menulis algoritma
+dengan menggunakan bahasa yang lebih sederhana sehingga lebih mudah dimengerti.
+Pseudocode juga dapat digunakan untuk menulis algoritma dengan menggunakan
+bahasa yang lebih dekat dengan bahasa manusia.
+
+Contoh pseudocode sederhana adalah pseudocode untuk menyelesaikan masalah
+perhitungan sederhana seperti penjumlahan, pengurangan, perkalian, dan
+pembagian.
+
+```
+START
+INPUT angka pertama
+INPUT angka kedua
+DISPLAY hasil penjumlahan dari kedua angka
+END
+```
+
+Jenis-jenis Pseudocode :
+
+-   Flowchart
+-   Pseudocode
+
+### Data Structure
+
+Data Structure atau Struktur Data adalah sebuah cara untuk menyimpan dan
+mengorganisir data. Data Structure dapat digunakan untuk menyimpan data secara
+efisien dan mudah diakses. Data Structure juga dapat digunakan untuk
+mengelompokkan data yang memiliki hubungan satu sama lain.
+
+Contoh Data Structure sederhana adalah Array. Array adalah sebuah struktur data
+yang digunakan untuk menyimpan data secara berurutan. Array dapat digunakan
+untuk menyimpan data yang memiliki tipe data yang sama.
+
+```js
+var array = [1, 2, 3, 4, 5];
+
+console.log(array[0]); // 1
+console.log(array[1]); // 2
+
+array[0] = 6;
+
+console.log(array[0]); // 6
+
+array.push(7);
+
+console.log(array[5]); // 7
+
+array.pop();
+
+console.log(array[5]); // undefined
+```
+
+```js
+class LinkedList {
+    constructor() {
+        this.head = null;
+        this.tail = null;
+    }
+
+    append(value) {
+        const newNode = { value: value, next: null };
+
+        if (this.tail) {
+            this.tail.next = newNode;
+        }
+
+        this.tail = newNode;
+
+        if (!this.head) {
+            this.head = newNode;
+        }
+    }
+
+    prepend(value) {
+        const newNode = { value: value, next: this.head };
+
+        this.head = newNode;
+
+        if (!this.tail) {
+            this.tail = newNode;
+        }
+    }
+
+    delete(value) {
+        if (!this.head) {
+            return;
+        }
+
+        while (this.head && this.head.value === value) {
+            this.head = this.head.next;
+        }
+
+        let currentNode = this.head;
+
+        while (currentNode.next) {
+            if (currentNode.next.value === value) {
+                currentNode.next = currentNode.next.next;
+            } else {
+                currentNode = currentNode.next;
+            }
+        }
+
+        if (this.tail.value === value) {
+            this.tail = currentNode;
+        }
+    }
+
+    find(value) {
+        if (!this.head) {
+            return;
+        }
+
+        let currentNode = this.head;
+
+        while (currentNode) {
+            if (currentNode.value === value) {
+                return currentNode;
+            }
+
+            currentNode = currentNode.next;
+        }
+
+        return null;
+    }
+}
+
+const linkedList = new LinkedList();
+
+linkedList.append(1);
+console.log(linkedList.find(1)); // { value: 1, next: null }
+
+linkedList.append(2);
+console.log(linkedList.find(2)); // { value: 2, next: null }
+
+linkedList.prepend(3);
+console.log(linkedList.find(3)); // { value: 3, next: { value: 1, next: null } }
+
+linkedList.delete(1);
+console.log(linkedList.find(1)); // null
+```
+
+Jenis-jenis Data Structure :
+
+-   Array
+-   Linked List
+-   Stack
+-   Queue
+-   Tree
+-   Graph
+-   Hash Table
+-   Dan lain-lain
+
+### Big O Notation
+
+Big O Notation adalah sebuah cara untuk mengukur kompleksitas dari sebuah
+algoritma. Big O Notation digunakan untuk mengukur kompleksitas dari sebuah
+algoritma dengan menggunakan notasi matematika. Big O Notation juga digunakan
+untuk mengukur kompleksitas dari sebuah algoritma dengan menggunakan notasi
+bahasa pemrograman. Big O Notation dapat digunakan untuk mengukur kompleksitas
+dari sebuah algoritma dengan menggunakan notasi bahasa pemrograman.
+
+Jenis-jenis Big O Notation :
+
+1.  O(1) : Constant, kompleksitas konstan
+
+        ```
+        function printFirstItem(items) {
+             console.log(items[0]);
+        }
+        ```
+
+        Pada contoh diatas, kompleksitas dari algoritma tersebut adalah O(1) karena
+        tidak terdapat perulangan dan tidak terdapat operasi matematika yang
+        kompleks.
+
+2.  O(log n) : Logarithmic, kompleksitas logaritma
+
+        ```
+        function binarySearch(items, value) {
+            var startIndex = 0,
+                stopIndex = items.length - 1,
+                middle = Math.floor((stopIndex + startIndex)/2);
+
+            while(items[middle] != value && startIndex < stopIndex){
+
+                //adjust search area
+                if (value < items[middle]){
+                    stopIndex = middle - 1;
+                } else if (value > items[middle]){
+                    startIndex = middle + 1;
+                }
+
+                //recalculate middle
+                middle = Math.floor((stopIndex + startIndex)/2);
+            }
+
+            //make sure it's the right value
+            return (items[middle] != value) ? -1 : middle;
+        }
+        ```
+
+        Pada contoh diatas, kompleksitas dari algoritma tersebut adalah O(log n)
+        karena terdapat perulangan dan operasi matematika yang kompleks.
+
+3.  O(n) : Linear, kompleksitas linear
+
+        ```
+        function printAllItems(items) {
+            items.forEach(function(item) {
+                console.log(item);
+            });
+        }
+        ```
+
+        Pada contoh diatas, kompleksitas dari algoritma tersebut adalah O(n)
+        karena terdapat perulangan dan operasi matematika yang sederhana.
+
+4.  O(n log n) : Log Linear, kompleksitas log linear
+
+        ```
+        function mergeSort(items){
+
+            //split the array into halves and merge them recursively
+            if (items.length < 2) {
+                return items;
+            }
+
+            var middle = Math.floor(items.length / 2),
+                left   = items.slice(0, middle),
+                right  = items.slice(middle);
+
+            return merge(mergeSort(left), mergeSort(right));
+        }
+
+        //merges two sorted arrays
+        function merge(left, right){
+            var result = [];
+
+            while (left.length && right.length) {
+                if (left[0] <= right[0]) {
+                    result.push(left.shift());
+                } else {
+                    result.push(right.shift());
+                }
+            }
+
+            while (left.length)
+                result.push(left.shift());
+
+            while (right.length)
+                result.push(right.shift());
+
+            return result;
+        }
+        ```
+        Pada contoh diatas, kompleksitas dari algoritma tersebut adalah O(n log n) karena terdapat perulangan dan operasi matematika yang kompleks. Pada contoh diatas, kompleksitas dari algoritma tersebut adalah O(n log n) karena terdapat perulangan dan operasi matematika yang kompleks.
+
+5.  O(n^2) : Quadratic, kompleksitas kuadrat
+
+        ```
+        function printAllPossibleOrderedPairs(items) {
+            items.forEach(function(firstItem) {
+                items.forEach(function(secondItem) {
+                    console.log(firstItem, secondItem);
+                });
+            });
+        }
+        ```
+        Pada contoh diatas, kompleksitas dari algoritma tersebut adalah O(n^2) karena terdapat perulangan dan operasi matematika yang kompleks. Pada contoh diatas, kompleksitas dari algoritma tersebut adalah O(n^2) karena terdapat perulangan dan operasi matematika yang kompleks.
+
+6.  O(2^n) : Exponential, kompleksitas eksponensial
+
+        ```
+        function fibonacci(n) {
+            if (n < 2) {
+                return n;
+            }
+
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+        ```
+        Pada contoh diatas, kompleksitas dari algoritma tersebut adalah O(2^n) karena terdapat perulangan dan operasi matematika yang kompleks. Pada contoh diatas, kompleksitas dari algoritma tersebut adalah O(2^n) karena terdapat perulangan dan operasi matematika yang kompleks.
+
+7.  O(n!) : Factorial, kompleksitas faktorial
+
+        ```
+        function printAllPermutations(items) {
+            var permutationItems = items.slice(); //clone array
+
+            //base case
+            if (permutationItems.length === 0) {
+                console.log(permutationItems);
+            } else {
+                //for each item in the array
+                for (var i = 0; i < permutationItems.length; i++) {
+                    var currentItem = permutationItems.splice(i, 1); //remove current item
+
+                    //recurse over the rest of array
+                    printAllPermutations(permutationItems.slice());
+
+                    permutationItems.splice(i, 0, currentItem[0]); //put item back
+                }
+            }
+        }
+        ```
+        Pada contoh diatas, kompleksitas dari algoritma tersebut adalah O(n!) karena terdapat perulangan dan operasi matematika yang kompleks. Pada contoh diatas, kompleksitas dari algoritma tersebut adalah O(n!) karena terdapat perulangan dan operasi matematika yang kompleks.
 
 ## Unix Command Line
 
@@ -25,10 +358,10 @@ file dan menjalankannya.
 
 ### Contoh-Contoh Command Line Interface
 
-- bash
-- zsh
-- cmd
-- sh
+-   bash
+-   zsh
+-   cmd
+-   sh
 
 ### Contoh Perintah Command Line Interface
 
@@ -37,36 +370,37 @@ antara lain :
 
 #### Navigasi
 
-- `cd` : untuk berpindah direktori
-- `ls` : untuk melihat isi direktori
-- `pwd` : untuk melihat direktori yang sedang aktif
+-   `cd` : untuk berpindah direktori
+-   `ls` : untuk melihat isi direktori
+-   `pwd` : untuk melihat direktori yang sedang aktif
 
 #### Manipulasi File
 
-- `touch` : untuk membuat file
-- `mkdir` : untuk membuat direktori
-- `rm` : untuk menghapus file
+-   `touch` : untuk membuat file
+-   `mkdir` : untuk membuat direktori
+-   `rm` : untuk menghapus file
 
 #### Melihat isi file
 
-- `cat` : untuk melihat isi file
-- `tail` : untuk melihat beberapa line awal dari sebuah file text
-- `head` : untuk melihat beberapa line awal dari sebuah file text
-- `grep` : untuk mencari kata pada sebuah file
+-   `cat` : untuk melihat isi file
+-   `tail` : untuk melihat beberapa line awal dari sebuah file text
+-   `head` : untuk melihat beberapa line awal dari sebuah file text
+-   `grep` : untuk mencari kata pada sebuah file
 
 ## Tambahan
 
 #### Relative Path
 
-- Relative path adalah path yang berhubungan dengan direktori yang sedang aktif.
+-   Relative path adalah path yang berhubungan dengan direktori yang sedang
+    aktif.
 
-  `/Users/user/Work/GitHub/skilvul/tugas`
+    `/Users/user/Work/GitHub/skilvul/tugas`
 
 #### Absolute Path
 
-- Absolute path adalah path yang berhubungan dengan root direktori.
+-   Absolute path adalah path yang berhubungan dengan root direktori.
 
-  `./catatan`
+    `./catatan`
 
 ## Git dan Github Dasar
 
@@ -175,36 +509,36 @@ dari informasi tersebut. Cara membuat atribut HTML adalah sebagai berikut
 
 Contoh atribut HTML adalah sebagai berikut:
 
-- `id` digunakan untuk menandai id dari sebuah elemen.
-- `class` digunakan untuk menandai kelas dari sebuah elemen.
-- `src` digunakan untuk menandai sumber dari sebuah elemen.
-- `href` digunakan untuk menandai link dari sebuah elemen.
-- `alt` digunakan untuk menandai alternatif dari sebuah elemen. Dan masih banyak
-  lagi yang lainnya
+-   `id` digunakan untuk menandai id dari sebuah elemen.
+-   `class` digunakan untuk menandai kelas dari sebuah elemen.
+-   `src` digunakan untuk menandai sumber dari sebuah elemen.
+-   `href` digunakan untuk menandai link dari sebuah elemen.
+-   `alt` digunakan untuk menandai alternatif dari sebuah elemen. Dan masih
+    banyak lagi yang lainnya
 
 ### Basic Tag HTML
 
 Ada basic tag HTML yang harus kamu ketahui, yaitu:
 
-- `<!DOCTYPE html>` mendefinisikan bahwa dokumen ini adalah dokumen HTML5
-- `<html></html>` digunakan untuk menandai awal dari sebuah halaman web.
-- `<head></head>` digunakan untuk menandai bagian dari halaman web yang tidak
-  akan ditampilkan di browser.
-- `<title></title>` digunakan untuk menandai judul dari halaman web.
-- `<body></body>` digunakan untuk menandai bagian dari halaman web yang akan
-  ditampilkan di browser.
+-   `<!DOCTYPE html>` mendefinisikan bahwa dokumen ini adalah dokumen HTML5
+-   `<html></html>` digunakan untuk menandai awal dari sebuah halaman web.
+-   `<head></head>` digunakan untuk menandai bagian dari halaman web yang tidak
+    akan ditampilkan di browser.
+-   `<title></title>` digunakan untuk menandai judul dari halaman web.
+-   `<body></body>` digunakan untuk menandai bagian dari halaman web yang akan
+    ditampilkan di browser.
 
 Struktur dasar dari sebuah halaman web adalah sebagai berikut:
 
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Judul halaman</title>
-	</head>
-	<body>
-		isi halaman
-	</body>
+    <head>
+        <title>Judul halaman</title>
+    </head>
+    <body>
+        isi halaman
+    </body>
 </html>
 ```
 
@@ -252,8 +586,8 @@ memiliki tingkat kepentingan yang sama dengan heading.
 
 ```html
 <img
-	src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-	alt="Google Logo"
+    src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    alt="Google Logo"
 />
 ```
 
@@ -267,16 +601,16 @@ sedangkan unordered list adalah list yang tidak berurutan.
 ```html
 <!-- Ordered List -->
 <ol>
-	<li>Item 1</li>
-	<li>Item 2</li>
-	<li>Item 3</li>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
 </ol>
 
 <!-- Unordered List -->
 <ul>
-	<li>Item 1</li>
-	<li>Item 2</li>
-	<li>Item 3</li>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
 </ul>
 ```
 
@@ -290,16 +624,16 @@ berisi data dari tabel.
 
 ```html
 <table>
-	<tr>
-		<th>Header 1</th>
-		<th>Header 2</th>
-		<th>Header 3</th>
-	</tr>
-	<tr>
-		<td>Data 1</td>
-		<td>Data 2</td>
-		<td>Data 3</td>
-	</tr>
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </tr>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+    </tr>
 </table>
 ```
 
@@ -313,8 +647,8 @@ menandai sebuah tombol.
 
 ```html
 <form>
-	<input type="text" placeholder="Input" />
-	<button type="submit">Submit</button>
+    <input type="text" placeholder="Input" />
+    <button type="submit">Submit</button>
 </form>
 ```
 
@@ -354,9 +688,9 @@ main, section, dan article.
 
 Untuk deploy HTML, kita bisa menggunakan beberapa cara, yaitu:
 
-- Deploy dengan menggunakan Github Pages
-- Deploy dengan menggunakan Netlify
-- Deploy dengan menggunakan Vercel
+-   Deploy dengan menggunakan Github Pages
+-   Deploy dengan menggunakan Netlify
+-   Deploy dengan menggunakan Vercel
 
 Dan masih banyak lagi cara deploy HTML lainnya.
 
@@ -373,10 +707,10 @@ CSS memiliki peran yang sangat penting dalam pembuatan sebuah halaman web. CSS
 digunakan untuk mengatur tampilan dari sebuah halaman web. CSS memiliki 3 peran
 yaitu,
 
-- Mengatur tampilan dari sebuah halaman web
-- Mengatur posisi dari sebuah halaman web
-- Mengatur animasi dari sebuah halaman web
-- Mengatur posisi dari sebuah halaman web
+-   Mengatur tampilan dari sebuah halaman web
+-   Mengatur posisi dari sebuah halaman web
+-   Mengatur animasi dari sebuah halaman web
+-   Mengatur posisi dari sebuah halaman web
 
 ### Cara Menyisipkan CSS ke HTML
 
@@ -394,7 +728,7 @@ style.
 
 ```css
 selector {
-	property: value;
+    property: value;
 }
 ```
 
@@ -430,9 +764,9 @@ digunakan untuk menampilkan sebuah website.
 
 ```css
 @media screen and (max-width: 600px) {
-	body {
-		background-color: red;
-	}
+    body {
+        background-color: red;
+    }
 }
 ```
 
@@ -446,12 +780,12 @@ HTML yang digunakan untuk menentukan sebuah elemen HTML menjadi responsive.
 
 ```css
 .flex-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 ```
 
@@ -529,8 +863,8 @@ variabel yang dapat digunakan untuk menyimpan banyak nilai.
 
 ```javascript
 var nama = {
-	namaDepan: "Ersan",
-	namaBelakang: "Karimi",
+    namaDepan: "Ersan",
+    namaBelakang: "Karimi",
 };
 ```
 
@@ -544,21 +878,21 @@ perulangan yang digunakan untuk melakukan perulangan.
 
 ```javascript
 for (var i = 0; i < 10; i++) {
-	console.log(i);
+    console.log(i);
 }
 
 // while loop
 var i = 0;
 while (i < 10) {
-	console.log(i);
-	i++;
+    console.log(i);
+    i++;
 }
 
 // do while loop
 var i = 0;
 do {
-	console.log(i);
-	i++;
+    console.log(i);
+    i++;
 } while (i < 10);
 ```
 
@@ -574,11 +908,11 @@ sebuah kondisi yang digunakan untuk menentukan sebuah kondisi.
 var a = 10;
 var b = 5;
 if (a > b) {
-	console.log("a lebih besar dari b");
+    console.log("a lebih besar dari b");
 } else if (a < b) {
-	console.log("a lebih kecil dari b");
+    console.log("a lebih kecil dari b");
 } else {
-	console.log("a sama dengan b");
+    console.log("a sama dengan b");
 }
 ```
 
@@ -620,15 +954,15 @@ digunakan untuk melakukan sebuah fungsi.
 
 ```javascript
 function nama() {
-	console.log("Ersan Karimi");
+    console.log("Ersan Karimi");
 }
 
 var nama = function () {
-	console.log("Ersan Karimi");
+    console.log("Ersan Karimi");
 };
 
 var nama = () => {
-	console.log("Ersan Karimi");
+    console.log("Ersan Karimi");
 };
 ```
 
@@ -644,9 +978,9 @@ sebuah variabel.
 ```javascript
 var a = 10;
 function nama() {
-	var b = 5;
-	console.log(a);
-	console.log(b);
+    var b = 5;
+    console.log(a);
+    console.log(b);
 }
 nama();
 console.log(a);
@@ -702,6 +1036,6 @@ sebuah fungsi.
 ```javascript
 var a = document.getElementById("nama");
 a.addEventListener("click", function () {
-	console.log("Ersan Karimi");
+    console.log("Ersan Karimi");
 });
 ```
